@@ -19,14 +19,10 @@ Add the following to your startup.cs file
   
 * Inject IClientNotification to your controller
 
-      private IClientNotification _clientNotification;
-              public HomeController(IPetRepository petRepository,
-                                      UserManager<Owner> userManager,
-                                      INotificationRepository notificationRepository,
-                                      IClientNotification clientNotification)
+              private IClientNotification _clientNotification;
+      
+              public HomeController(IClientNotification clientNotification)
               {
-                  _petRepository = petRepository;
-                  _userManager = userManager;
                   _clientNotification = clientNotification;
               }
 * Create Toast Notification as follows              
