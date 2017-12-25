@@ -51,4 +51,4 @@ OR
                                         
 
 * Add the following line to your layout file 
-     @await Component.InvokeAsync("ClientNotifications.Notify")
+     * @await Component.InvokeAsync("ClientNotifications.Notify")
