@@ -2,10 +2,10 @@
 # Give feedback to client in your asp net core 2 and above mvc application using client side javascript notifications : toastr and sweet js
 -Installation
 From Dotnet CLI
-dotnet add package ClientNotifications --version 1.17.1
+* dotnet add package ClientNotifications --version 1.17.1
 
 From Package Manager
-Install-Package ClientNotifications -Version 1.17.1
+* Install-Package ClientNotifications -Version 1.17.1
 
 - Add Client side javascript and css file: 
 * Include Toastr js for toast notifications : http://codeseven.github.io/toastr/
@@ -13,7 +13,7 @@ Install-Package ClientNotifications -Version 1.17.1
 
 -Usage
 * Add the following to your startup.cs file
-  services.AddToastNotification();
+  * services.AddToastNotification();
   
 * Inject IClientNotification to your controller
 
@@ -50,12 +50,6 @@ OR
 
 * Add the following line to your layout file 
 
-    <div class="container body-content">
+    *<div class="container body-content">
         @await Component.InvokeAsync("ClientNotifications.Notify")
-
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - pet_manager</p>
-        </footer>
-    </div>
+    *</div>
