@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>upretymadan45.NetCore.ClientNotifications</id>
+    <version>1.0.8</version>
+    <title>Client Notifications</title>
+    <authors>Madan Kumar Uprety</authors>
+    <owners>Madan Kumar Uprety</owners>
+    <projectUrl>https://github.com/upretymadan45/NetCoreClientNotifications</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Give feedback to client through toastr or sweet notification in asp net core 2.0 and above MVC application</description>
+    <releaseNotes>Second Release</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>aspnetcore clientsidenotifications</tags>
+    <contentFiles>
+      <files include="**/Notification/*.*" buildAction="None" copyToOutput="true" flatten="false" />
+    </contentFiles>
+  </metadata>
+</package>

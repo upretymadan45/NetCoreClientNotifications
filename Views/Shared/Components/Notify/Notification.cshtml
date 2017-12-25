@@ -1,0 +1,12 @@
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        @if(TempData["notification"]!=null && TempData["options"]!=null){
+            @:toastr.options = @Html.Raw(TempData["options"]);
+            @Html.Raw(TempData["notification"]);
+        }
+
+        @if(TempData["swalNotification"]!=null){
+            @Html.Raw(TempData["swalNotification"]);
+        }
+    });
+</script>

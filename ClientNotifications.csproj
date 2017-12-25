@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Provides client side notifications features using toastr and sweet js in asp net core mvc project</Description>
+    <Copyright>Madan Kumar Uprety</Copyright>
+    <AssemblyTitle>ClientNotifications</AssemblyTitle>
+    <VersionPrefix>1.1.9</VersionPrefix>
+    <Authors>Madan Kumar Uprety</Authors>
+    <PackageProjectUrl>https://github.com/upretymadan45/NetCoreClientNotifications</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>ASP.NET Core MVC toastr toast sweet notification</PackageTags>
+    <RepositoryUrl>https://github.com/upretymadan45/NetCoreClientNotifications</RepositoryUrl>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>ClientNotifications</AssemblyName>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+   <ItemGroup>
+    <EmbeddedResource Include="**\*.resx" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
+    <EmbeddedResource Include="Views\**\*.cshtml;compiler\resources\**\*" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.1"/>
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="2.0.0" />
+  </ItemGroup>
+</Project>
