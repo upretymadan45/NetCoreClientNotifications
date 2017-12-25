@@ -1,19 +1,21 @@
 # NetCoreClientNotifications
 # Give feedback to client in your asp net core 2 and above mvc application using client side javascript notifications : toastr and sweet js
--Installation
+Installation
+
 From Dotnet CLI
 * dotnet add package ClientNotifications --version 1.17.1
 
 From Package Manager
 * Install-Package ClientNotifications -Version 1.17.1
 
-- Add Client side javascript and css file: 
+Add Client side javascript and css file: 
 * Include Toastr js for toast notifications : http://codeseven.github.io/toastr/
 * Include Sweet js for sweet notifications : https://lipis.github.io/bootstrap-sweetalert/
 
--Usage
-* Add the following to your startup.cs file
-  * services.AddToastNotification();
+Usage:
+
+Add the following to your startup.cs file
+* services.AddToastNotification();
   
 * Inject IClientNotification to your controller
 
@@ -49,7 +51,4 @@ OR
                                         
 
 * Add the following line to your layout file 
-
-    *<div class="container body-content">
-        @await Component.InvokeAsync("ClientNotifications.Notify")
-    *</div>
+     @await Component.InvokeAsync("ClientNotifications.Notify")
